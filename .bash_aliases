@@ -33,13 +33,3 @@ alias r="ranger"
 
 alias devel-log-on='drush vset devel_query_display 1'
 alias devel-log-off='drush vset devel_query_display 0'
-
-alias gfb='cd /srv/www/dev.giorgio-ferretti.it/sites/all/modules/gf_bonus'
-alias gf_discount='cd /srv/www/dev.giorgio-ferretti.it/sites/all/modules/gf_discount'
-alias gf_stock='cd /srv/www/dev.giorgio-ferretti.it/sites/all/modules/importkit/modules/gf_stock'
-alias prod='cd /srv/www/giorgio-ferretti.it/'
-alias prodm='cd /srv/www/giorgio-ferretti.it/sites/all/modules'
-alias dev='cd /srv/www/dev.giorgio-ferretti.it/'
-alias devm='cd /srv/www/dev.giorgio-ferretti.it/sites/all/modules'
-alias prodt='cd /srv/www/giorgio-ferretti.it/sites/all/themes/stability/stability_sub'
-alias devt='cd /srv/www/dev.giorgio-ferretti.it/sites/all/themes/stability/stability_sub'
