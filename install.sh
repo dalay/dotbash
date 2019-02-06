@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILES=$(find $(pwd) -type f ! -path '*/Makefile' ! -path '*/*.sh')
+FILES=$(find $(pwd) -maxdepth 1 -type f ! -path '*/Makefile' ! -path '*/*.sh' ! -path '*/.git*')
 BCK_DIR='.ORIG'
 
 for file in $FILES
@@ -9,12 +9,13 @@ do
     orig_file="${HOME}/${file_name}" 
 
     if [ -f "${orig_file}" ]; then
-        echo "File ${file_name} exists in home dir"
         if ! [ -d "$BCK_DIR" ]; then 
             mkdir $BCK_DIR
         fi
         mv $orig_file $BCK_DIR
     fi
 
-    ls -s $file ${HOME}/
+    ln -s $file ${HOME}/
 done
+
+source ${HOME}/.bashrc

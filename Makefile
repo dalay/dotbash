@@ -1,2 +1,4 @@
 install:
-	@source ./install.sh
+	@./install.sh
+
+.PHONY: install
