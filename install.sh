@@ -17,5 +17,3 @@ do
 
     ln -s $file ${HOME}/
 done
-
-source ${HOME}/.bashrc
